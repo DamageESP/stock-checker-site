@@ -6,7 +6,7 @@ export function DataItem({ dataItem }) {
     <div className={`dataItem${dataItem.loading ? ' loading' : dataItem.isInStock ? ' inStock' : ' notInStock'}`} key={dataItem.key}>
       <div className="leftContent">
         <header className="headerContent">
-          <span>{dataItem.loading ? <img alt="" className="loadingSpinner" src="loading.svg" /> : dataItem.productPrice ? dataItem.isInStock ? '✔️' : '❌' : '❔'}</span>
+          <span>{dataItem.loading ? <img alt="" className="loadingSpinner" src="stock-checker-site/loading.svg" /> : dataItem.productPrice ? dataItem.isInStock ? '✔️' : '❌' : '❔'}</span>
           <span className="name">{dataItem.productName}</span>
         </header>
         <div className="smallContent">
@@ -15,7 +15,7 @@ export function DataItem({ dataItem }) {
         </div>
       </div>
       <div className="rightContent">
-        <span className="price">{dataItem.productPrice ? dataItem.productPrice : dataItem.loading ? <img alt="" className="loadingSpinner" src="loading.svg" /> : '❔'} EUR</span>
+        <span className="price">{dataItem.productPrice ? dataItem.productPrice : dataItem.loading ? <img alt="" className="loadingSpinner" src="stock-checker-site/loading.svg" /> : '❔'} EUR</span>
         <a rel="noreferrer" target="_blank" href={dataItem.productUrl} className="visitButton">🔗 Visit</a>
       </div>
     </div>
