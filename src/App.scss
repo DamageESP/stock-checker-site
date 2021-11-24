@@ -18,6 +18,14 @@
   .data {
     display: grid;
     gap: 15px;
+    grid-template-columns: 1fr;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 700px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
