@@ -14,6 +14,19 @@
     margin-bottom: 15px;
   }
 
+  .subsubheading {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  code {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    border-radius: 5px;
+  }
+
   .productList,
   .data {
     display: grid;

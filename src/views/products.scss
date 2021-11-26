@@ -1,0 +1,17 @@
+.productsPage {
+  .productCreation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+
+    .massCreation {
+      display: flex;
+      flex-direction: column;
+
+      textarea {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

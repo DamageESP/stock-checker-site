@@ -24,6 +24,22 @@ input {
   }
 }
 
+textarea {
+  background-color: #1e1e28;
+  border: none;
+  outline: none;
+  padding: 10px;
+  resize: vertical;
+  display: block;
+  color: #f7f7f7;
+  border-radius: 5px;
+  font: inherit;
+
+  &:focus {
+    background-color: #272733;
+  }
+}
+
 button {
   background: none;
   font: inherit;
